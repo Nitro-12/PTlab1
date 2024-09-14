@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-import os
 import sys
+import os
 import pytest
 
 # Путь к папке src в sys.path
@@ -11,9 +11,7 @@ sys.path.insert(0, os.path.abspath(
 from Types import DataType
 from CalcRating import CalcRating
 
-
 RatingsType = dict[str, float]
-
 
 class TestCalcRating:
 
