@@ -14,6 +14,7 @@ sys.path.insert(0, os.path.abspath(
 
 RatingsType = dict[str, float]
 
+
 class TestCalcRating:
 
     @pytest.fixture()
