@@ -10,7 +10,6 @@ sys.path.insert(0, os.path.abspath(
 ))
 
 
-
 @pytest.fixture()
 def correct_arguments_string() -> tuple[list[str], str]:
     return ["-p", "/home/user/file.txt"], "/home/user/file.txt"
