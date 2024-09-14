@@ -2,13 +2,13 @@
 import os
 import sys
 import pytest
+from main import get_path_from_arguments
 
 # Добавляем путь к папке src в sys.path
 sys.path.insert(0, os.path.abspath(
     os.path.join(os.path.dirname(__file__), '../src')
 ))
 
-from main import get_path_from_arguments
 
 
 @pytest.fixture()

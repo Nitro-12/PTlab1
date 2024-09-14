@@ -3,6 +3,7 @@ import os
 import sys
 import pytest
 
+
 from Types import DataType
 from CalcRating import CalcRating
 
