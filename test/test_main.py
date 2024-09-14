@@ -3,11 +3,13 @@ import sys
 import os
 import pytest
 
+
 # Добавляем путь к папке src в sys.path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
 
 # Импортируем функцию из модуля src
 from main import get_path_from_arguments
+
 
 @pytest.fixture()
 def correct_arguments_string() -> tuple[list[str], str]:
