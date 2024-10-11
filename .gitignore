@@ -3,3 +3,5 @@ __pycache__/
 test/.pytest_cache/
 src/__pycache__/
 test/__pycache__/
+test/__init__.py
+src/__init__.py
