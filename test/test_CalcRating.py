@@ -6,6 +6,7 @@ from src.CalcRating import CalcRating
 
 RatingsType = dict[str, float]
 
+
 class TestCalcRating:
 
     @pytest.fixture()
@@ -29,7 +30,8 @@ class TestCalcRating:
         }
         return data, rating_scores
 
-    def test_init_calc_rating(self, input_data: tuple[DataType, RatingsType]) -> None:
+    def test_init_calc_rating(self, input_data: tuple[DataType, RatingsType]) \
+            -> None:
         calc_rating = CalcRating(input_data[0])
         assert input_data[0] == calc_rating.data
 
