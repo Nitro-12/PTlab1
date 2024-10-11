@@ -45,7 +45,6 @@
 
 
 ## UML-диаграмма:
-![image](https://github.com/AnnJessMay/PTLab1/assets/122811211/f27ba7b6-ac9a-4614-a864-3997d397df62)
 
 
 ## Вывод:
