@@ -1,15 +1,8 @@
-import os
-import sys
+# -*- coding: utf-8 -*-
 import pytest
 import yaml
 from YAMLDataReader import YAMLDataReader
 from Types import DataType
-
-
-# Путь к папке src в sys.path
-sys.path.insert(0, os.path.abspath(
-    os.path.join(os.path.dirname(__file__), '../src')
-))
 
 
 class TestYAMLDataReader:
