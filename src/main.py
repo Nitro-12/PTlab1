@@ -26,7 +26,6 @@ def main() -> None:
     reader = YAMLDataReader()
     students = reader.read(path)
     print("Студенты: ", students)
-   
     analyzer = StudentAnalyzer(students)
     student = analyzer.find_student()
     print("Студент, получивший как минимум 3 оценки по 76 баллов: ", student)
