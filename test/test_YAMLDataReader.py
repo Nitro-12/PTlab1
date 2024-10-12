@@ -1,8 +1,8 @@
-# -*- coding: utf-8 -*-
 import pytest
 import yaml
+
 from src.YAMLDataReader import YAMLDataReader
-from Types import DataType
+from src.Types import DataType
 
 
 class TestYAMLDataReader:
@@ -21,7 +21,7 @@ class TestYAMLDataReader:
 
     @pytest.fixture()
     def yaml_file(self, yaml_file_content, tmpdir):
-        file = tmpdir.join("students.yaml")
+        file = tmpdir.join("students_data.yaml")
         file.write(yaml_file_content)
         return str(file)
 
