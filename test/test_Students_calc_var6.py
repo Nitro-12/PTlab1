@@ -19,19 +19,19 @@ class TestStudentAnalyzer:
                 {"математика": 70, "русский": 75, "физика": 65},
         }
 
-    def test_student_with_three_grades_equal_76(self, students_data):
+    def test_student_three__76(self, students_data):
         """Тестируем случай, когда у студента три оценки равные 76."""
         analyzer = StudentAnalyzer(students_data)
         result = analyzer.find_student()
         assert result in ["Алексеев И.И.", "Петров П.П."]
 
-    def test_student_with_more_than_three_grades_equal_76(self, students_data):
+    def test_student_more_76(self, students_data):
         """Тестируем случай, когда у студента более трех оценок равных 76."""
         analyzer = StudentAnalyzer(students_data)
         result = analyzer.find_student()
         assert result in ["Алексеев И.И.", "Петров П.П."]
 
-    def test_student_with_less_than_three_grades_equal_76(self, students_data):
+    def test_student_less_76(self, students_data):
         """Тестируем случай, когда у студента меньше трех оценок равных 76."""
         students = {
             "Сидоров С.С.": {"математика": 76, "русский": 75, "физика": 76},
@@ -47,7 +47,7 @@ class TestStudentAnalyzer:
         result = analyzer.find_student()
         assert result == "Студентов с минимум тремя оценками = 76 нет."
 
-    def test_multiple_students_with_no_high_grades(self):
+    def test_multiple_students(self):
         """Тестируем случай, когда у нескольких студентов
                     нет трех высоких оценок."""
         students = {
