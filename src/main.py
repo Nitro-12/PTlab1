@@ -23,21 +23,10 @@ def main() -> None:
 
     path = get_path_from_arguments(sys.argv[1:])
 
-    # Читаем данные студентов
-    # reader = TextDataReader()
-    # students = reader.read(path)
-    # print("Students: ", students)  # Выводим считанные данные
-
-    # Читаем данные студентов из YAML
     reader = YAMLDataReader()
     students = reader.read(path)
-    print("Students: ", students)  # Выводим считанные данные
-
-    # Вычисляем рейтинг студентов
-    # rating = CalcRating(students).calc()
-    # print("Rating: ", rating)
-
-    # Используем StudentAnalyzer для поиска студента с оценками >= 76
+    print("Студенты: ", students)
+   
     analyzer = StudentAnalyzer(students)
     student = analyzer.find_student()
     print("Студент, получивший как минимум 3 оценки по 76 баллов: ", student)
