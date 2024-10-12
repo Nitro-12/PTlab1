@@ -1,7 +1,6 @@
-# -*- coding: utf-8 -*-
 import pytest
 
-from Students_calc_var6 import StudentAnalyzer
+from src.Students_calc_var6 import StudentAnalyzer
 
 
 class TestStudentAnalyzer:
