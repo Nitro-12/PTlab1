@@ -38,14 +38,14 @@ class TestStudentAnalyzer:
         }
         analyzer = StudentAnalyzer(students)
         result = analyzer.find_student()
-        assert result == "Студентов с минимум тремя оценками >= 76 нет."
+        assert result == "Студентов с минимум тремя оценками = 76 нет."
 
     def test_no_students(self):
         """Тестируем случай, когда нет студентов."""
         students = {}
         analyzer = StudentAnalyzer(students)
         result = analyzer.find_student()
-        assert result == "Студентов с минимум тремя оценками >= 76 нет."
+        assert result == "Студентов с минимум тремя оценками = 76 нет."
 
     def test_multiple_students_with_no_high_grades(self):
         """Тестируем случай, когда у нескольких студентов
@@ -56,4 +56,4 @@ class TestStudentAnalyzer:
         }
         analyzer = StudentAnalyzer(students)
         result = analyzer.find_student()
-        assert result == "Студентов с минимум тремя оценками >= 76 нет."
+        assert result == "Студентов с минимум тремя оценками = 76 нет."
