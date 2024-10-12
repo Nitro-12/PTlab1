@@ -4,6 +4,7 @@ import pytest
 from src.Types import DataType
 from src.CalcRating import CalcRating
 
+
 RatingsType = dict[str, float]
 
 
@@ -30,12 +31,15 @@ class TestCalcRating:
         }
         return data, rating_scores
 
-    def test_init_calc_rating(self, input_data: tuple[DataType, RatingsType]) \
-            -> None:
+    def test_init_calc_rating(
+        self, input_data: tuple[DataType, RatingsType]
+    ) -> None:
         calc_rating = CalcRating(input_data[0])
         assert input_data[0] == calc_rating.data
 
-    def test_calc(self, input_data: tuple[DataType, RatingsType]) -> None:
+    def test_calc(
+        self, input_data: tuple[DataType, RatingsType]
+    ) -> None:
         rating = CalcRating(input_data[0]).calc()
         for student in rating.keys():
             rating_score = rating[student]
