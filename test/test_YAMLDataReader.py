@@ -21,7 +21,7 @@ class TestYAMLDataReader:
 
     @pytest.fixture()
     def yaml_file(self, yaml_file_content, tmpdir):
-        file = tmpdir.join("students_data.yaml")
+        file = tmpdir.join("students.yaml")
         file.write(yaml_file_content)
         return str(file)
 
