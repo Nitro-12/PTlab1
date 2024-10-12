@@ -1,14 +1,7 @@
 # -*- coding: utf-8 -*-
-import os
-import sys
 import pytest
 
 from Students_calc_var6 import StudentAnalyzer
-
-# Путь к папке src в sys.path
-sys.path.insert(0, os.path.abspath(
-    os.path.join(os.path.dirname(__file__), '../src')
-))
 
 
 class TestStudentAnalyzer:
