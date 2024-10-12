@@ -38,8 +38,9 @@
 
 ### Используемые языки библиотеки технологии
 - Язык программирования: Python 3.10
-- Библиотеки: pycodestyle, pytest, argparse, os, sys, JSON
-- Используемые технологии: Python, Git, GitHub Actions
+- Библиотеки: pycodestyle, pytest, argparse, sys, yaml
+- Используемые технологии: Git, GitHub Actions
+
 ### Индивидуальное задание 
 
 <h1 align="center">Вариант № 6</h1>
